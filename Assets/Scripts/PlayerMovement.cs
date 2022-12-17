@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 moveDirection;
     private Vector2 mousePos;
 
+    public PlayerHP hp;
+
     void Update()
     {
         ProcessInputs();
@@ -43,5 +45,14 @@ public class PlayerMovement : MonoBehaviour
         Vector2 lookDirection = mousePos - rb.position;
         float angle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg - 90f;
         rb.rotation = angle;
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        /* Collision detection for Enemy, Player must take damage. */
+        if (other.gameObject.tag == "Enemy")
+        {
+            hp.TakeDamage(100);
+        }
     }
 }
