@@ -27,7 +27,6 @@ public class Enemy2 : MonoBehaviour
     public EnemyHP hp;
     private bool isInAttackRange;
 
-    public GameObject GameOverScreen;
     public float attackRadius;
     public LayerMask whatIsPlayer;
 
@@ -54,15 +53,12 @@ public class Enemy2 : MonoBehaviour
             isInAttackRange = Physics2D.OverlapCircle(transform.position, attackRadius, whatIsPlayer);
             if (isInAttackRange)
             {
-                //Debug.Log("test222");
+                Debug.Log("test222");
                 rb.velocity = Vector2.zero;
                 Debug.Log("Enemy2 killed player" + transform.position + " | " + wayPoint);
             }
 
             unstickCounter++;
-
-            // Direction animation 
-
            
             dir = wayPoint;
             float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;

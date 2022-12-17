@@ -39,7 +39,7 @@ public class Enemy1 : MonoBehaviour
         isInChaseRange = Physics2D.OverlapCircle(transform.position, checkRadius, whatIsPlayer);
         isInAttackRange = Physics2D.OverlapCircle(transform.position, attackRadius, whatIsPlayer);
 
-        Debug.Log(isInChaseRange + " | " + isInAttackRange);
+        //Debug.Log(isInChaseRange + " | " + isInAttackRange);
 
 
         dir = target.position - transform.position;
@@ -54,12 +54,12 @@ public class Enemy1 : MonoBehaviour
         {
             if (isInChaseRange && !isInAttackRange)
             {
-                Debug.Log("test");
+                //Debug.Log("test");
                 MoveCharacter(movement);
             }
             if (isInAttackRange)
             {
-                Debug.Log("test222");
+                //Debug.Log("test222");
                 rb.velocity = Vector2.zero;
             }
         }
