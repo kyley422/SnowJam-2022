@@ -8,7 +8,8 @@ public class PlayerShooting : MonoBehaviour
     public Transform firePoint;
     public GameObject bulletPrefab;
     public float bulletForce = 20f;
-
+    public Camera cam;
+    private Vector2 mousePos;
     // Update is called once per frame
     void Update()
     {
@@ -20,6 +21,15 @@ public class PlayerShooting : MonoBehaviour
 
     void Shoot()
     {
+        Debug.Log("Shot Projectile");
+        mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 firePoint2D = new Vector2(firePoint.position.x, firePoint.position.y);
+        Vector2 aimDirection = mousePos - firePoint2D;
+
+        float angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg - 90f;
+        Quaternion radialPosition = Quaternion.Euler(0, 0, angle);
+        firePoint.rotation = radialPosition;
+
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
