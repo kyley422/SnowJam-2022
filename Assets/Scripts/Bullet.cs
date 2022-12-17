@@ -11,5 +11,10 @@ public class Bullet : MonoBehaviour
         GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
         Destroy(effect, 5f);
         Destroy(gameObject);
+
+        /* Check if other is an enemy, and if so, make it take damage. */
+        if (other.gameObject.tag == "Enemy") {
+            other.gameObject.GetComponent<EnemyHP>().TakeDamage(100);
+        }
     }
 }
