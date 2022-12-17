@@ -331,7 +331,7 @@ GameObject:
   - component: {fileID: 439153165}
   m_Layer: 0
   m_Name: Enemy3
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -348,6 +348,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14d37487030268840b78949dd1c191d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackTimer: 0.5
+  bulletPrefab: {fileID: 3429428723160052209, guid: 5484b3cf471466841868eb44e34aa242, type: 3}
 --- !u!212 &439153166
 SpriteRenderer:
   m_ObjectHideFlags: 0
