@@ -59,7 +59,6 @@ public class Enemy2 : MonoBehaviour
             }
 
             unstickCounter++;
-           
             dir = wayPoint;
             float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
             dir.Normalize();

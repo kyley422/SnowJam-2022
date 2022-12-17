@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerShooting : MonoBehaviour
 {
+    /* The empty gameObject that determines where on the Player the bullet is fired from. */
     public Transform firePoint;
     public GameObject bulletPrefab;
     public float bulletForce = 20f;
