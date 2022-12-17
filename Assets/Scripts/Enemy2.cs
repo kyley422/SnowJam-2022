@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy1 : MonoBehaviour
+public class Enemy2 : MonoBehaviour
 {
     [SerializeField]
     float speed;
@@ -34,6 +34,7 @@ public class Enemy1 : MonoBehaviour
 
     void Start()
     {
+        // Direction animation
         rb = GetComponent<Rigidbody2D>();
 
 
@@ -61,11 +62,14 @@ public class Enemy1 : MonoBehaviour
 
             unstickCounter++;
 
+            // Direction animation 
+
+           
             dir = wayPoint;
             float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
             dir.Normalize();
             movement = dir;
-          
+
             Debug.Log(currentPos2D + wayPoint);
             transform.position = Vector2.MoveTowards(currentPos2D, currentPos2D + wayPoint, speed * Time.deltaTime);
             if (Vector2.Distance(transform.position, wayPoint) < range)
