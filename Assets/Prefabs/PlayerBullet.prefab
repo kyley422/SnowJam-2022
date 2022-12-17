@@ -147,3 +147,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitEffect: {fileID: 5761094383843285960, guid: 56ccc8c89a55090439edf0914efa2b54, type: 3}
+  duration: 0.4
