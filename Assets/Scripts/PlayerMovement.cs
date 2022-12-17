@@ -54,5 +54,10 @@ public class PlayerMovement : MonoBehaviour
         {
             hp.TakeDamage(100);
         }
+        /* Collision detection for Enemy bullets */
+        if (other.gameObject.tag == "EnemyBullet")
+        {
+            hp.TakeDamage(100);
+        }
     }
 }
