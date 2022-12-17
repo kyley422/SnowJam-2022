@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraController : MonoBehaviour
+public class CameraControl : MonoBehaviour
 {
     public float cameraZoom = 8f; // Distance between camera and 2D plane
     public Vector2 offset = new Vector2(0f, 0f); // x-y offset of camera
