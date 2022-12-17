@@ -1,0 +1,110 @@
+.resume-button {
+    height: 73px;
+    width: 162px;
+    font-size: 30px;
+    background-color: rgba(8, 135, 73, 255);
+    color: rgba(0, 0, 0, 255);
+    justify-content: center;
+    align-items: center;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.resume-button:hover {
+    height: 73px;
+    width: 162px;
+    font-size: 30px;
+    background-color: rgb(7, 111, 60);
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.resume-button:active {
+    height: 73px;
+    width: 162px;
+    font-size: 30px;
+    background-color: rgb(7, 111, 60);
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.pause-button {
+    height: 73px;
+    width: 92px;
+    font-size: 20px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgba(0, 137, 37, 255);
+    color: rgba(0, 0, 0, 255);
+}
+
+.pause-button:hover {
+    height: 73px;
+    width: 92px;
+    font-size: 20px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgb(4, 63, 20);
+    color: rgb(0, 0, 0);
+}
+
+.pause-button:active {
+    height: 73px;
+    width: 92px;
+    font-size: 20px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgb(4, 63, 20);
+    color: rgb(255, 255, 255);
+}
