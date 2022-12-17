@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="Background" style="flex-grow: 1;">
+        <ui:VisualElement style="height: 372px; width: 318px; background-color: rgba(255, 255, 255, 255); border-top-left-radius: 22px; border-bottom-left-radius: 22px; border-top-right-radius: 22px; border-bottom-right-radius: 22px; align-items: center; justify-content: center;">
+            <ui:Button text="Start Game" display-tooltip-when-elided="true" style="height: 61px; width: 124px; border-left-color: rgba(0, 250, 1, 0); border-right-color: rgba(0, 250, 1, 0); border-top-color: rgba(0, 250, 1, 0); border-bottom-color: rgba(0, 250, 1, 0); background-color: rgb(38, 118, 40); border-top-left-radius: 25px; border-bottom-left-radius: 25px; border-top-right-radius: 25px; border-bottom-right-radius: 25px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
