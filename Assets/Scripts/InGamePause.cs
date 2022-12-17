@@ -35,14 +35,13 @@ public class InGamePause : MonoBehaviour
 
     public void PauseButtonPressed()
     {
-        Time.timeScale = 0f;
         pauseMenu.style.display = DisplayStyle.Flex;
-
+        Time.timeScale = 0;
     }
 
     public void ResumeButtonPressed()
     {
-        Time.timeScale = 1f;
         pauseMenu.style.display = DisplayStyle.None;
+        Time.timeScale = 1;
     }
 }
