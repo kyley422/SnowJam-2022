@@ -123,6 +123,124 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &68480043
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1036994564}
+    m_Modifications:
+    - target: {fileID: 144807924212472900, guid: 0839b6c6c486843a4bb62a9381401469, type: 3}
+      propertyPath: m_text
+      value: "Instructions for DialogueBox prefab\n1. Create a canvas, add NextDialogue
+        script to canvas\n2. Add a Button to canvas, drag DialogueBox prefabs under
+        canvas\n3. In canvas NextDialogue script, set next_dia with button and fill
+        pages elements with the DialogueBox's \n4. For each DialogueBox, set page
+        number in Text (TMP)'s PageNum script \"ord\" variable, starting at 0"
+      objectReference: {fileID: 0}
+    - target: {fileID: 144807924212472900, guid: 0839b6c6c486843a4bb62a9381401469, type: 3}
+      propertyPath: m_fontSize
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 144807924212472900, guid: 0839b6c6c486843a4bb62a9381401469, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 144807924212472900, guid: 0839b6c6c486843a4bb62a9381401469, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 144807924212472900, guid: 0839b6c6c486843a4bb62a9381401469, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 144807924212472900, guid: 0839b6c6c486843a4bb62a9381401469, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 144807924212472900, guid: 0839b6c6c486843a4bb62a9381401469, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 144807924212472900, guid: 0839b6c6c486843a4bb62a9381401469, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 969299870350231016, guid: 0839b6c6c486843a4bb62a9381401469, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 969299870350231016, guid: 0839b6c6c486843a4bb62a9381401469, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0028571
+      objectReference: {fileID: 0}
+    - target: {fileID: 969299870350231016, guid: 0839b6c6c486843a4bb62a9381401469, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0028571
+      objectReference: {fileID: 0}
+    - target: {fileID: 969299870350231016, guid: 0839b6c6c486843a4bb62a9381401469, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.0028571
+      objectReference: {fileID: 0}
+    - target: {fileID: 969299870350231016, guid: 0839b6c6c486843a4bb62a9381401469, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -350
+      objectReference: {fileID: 0}
+    - target: {fileID: 969299870350231016, guid: 0839b6c6c486843a4bb62a9381401469, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -62.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 969299870350231016, guid: 0839b6c6c486843a4bb62a9381401469, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 969299870350231016, guid: 0839b6c6c486843a4bb62a9381401469, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 969299870350231016, guid: 0839b6c6c486843a4bb62a9381401469, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 969299870350231016, guid: 0839b6c6c486843a4bb62a9381401469, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 969299870350231016, guid: 0839b6c6c486843a4bb62a9381401469, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 969299870350231016, guid: 0839b6c6c486843a4bb62a9381401469, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 969299870350231016, guid: 0839b6c6c486843a4bb62a9381401469, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 969299870350231016, guid: 0839b6c6c486843a4bb62a9381401469, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5474995261024388978, guid: 0839b6c6c486843a4bb62a9381401469, type: 3}
+      propertyPath: m_Name
+      value: readme
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476529818061767289, guid: 0839b6c6c486843a4bb62a9381401469, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 600
+      objectReference: {fileID: 0}
+    - target: {fileID: 9125358345080273295, guid: 0839b6c6c486843a4bb62a9381401469, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 600
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0839b6c6c486843a4bb62a9381401469, type: 3}
+--- !u!4 &68480044 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 969299870350231016, guid: 0839b6c6c486843a4bb62a9381401469, type: 3}
+  m_PrefabInstance: {fileID: 68480043}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &126251961
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -431,6 +549,7 @@ RectTransform:
   - {fileID: 1514903419}
   - {fileID: 126251962}
   - {fileID: 1338889573}
+  - {fileID: 68480044}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
