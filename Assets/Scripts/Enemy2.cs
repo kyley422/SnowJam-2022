@@ -57,7 +57,6 @@ public class Enemy2 : MonoBehaviour
                 //Debug.Log("test222");
                 rb.velocity = Vector2.zero;
                 Debug.Log("Enemy2 killed player" + transform.position + " | " + wayPoint);
-                GameOverScreen.SetActive(true);
             }
 
             unstickCounter++;

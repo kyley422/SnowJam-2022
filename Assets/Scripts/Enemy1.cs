@@ -1,88 +1,90 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Enemy1 : MonoBehaviour
 {
-    [SerializeField]
-    float speed;
-
-    [SerializeField]
-    float range;
-
-    [SerializeField]
-    float maxDistance;
-
-    public Vector2 wayPoint;
-    public Vector2 currentPos2D;
-
-    private int unstickCounter;
-
-    // Direction animation 
-    public bool shouldRotate;
-    private Rigidbody2D rb;
-    private Vector2 movement;
-    public Vector2 dir;
-
-    public EnemyHP hp;
-    private bool isInAttackRange;
+    public float speed;
+    public float checkRadius;
+    public float attackRadius;
+    public bool isInRange = false;
 
     public GameObject GameOverScreen;
-    public float attackRadius;
+
+    public bool shouldRotate;
+
     public LayerMask whatIsPlayer;
 
+    private Transform target;
+    private Rigidbody2D rb;
+    private Vector2 movement;
+    public Vector3 dir;
 
-    void Start()
+    private bool isInChaseRange;
+    private bool isInAttackRange;
+
+    public EnemyHP hp;
+
+    private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-
-
-        SetNewDestination();
+        target = GameObject.FindWithTag("Player").transform;
+        whatIsPlayer = LayerMask.GetMask("Player");
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        currentPos2D = new Vector2(transform.position.x, transform.position.y);
-        if (hp.currentHealth <= 0)
+
+        isInChaseRange = Physics2D.OverlapCircle(transform.position, checkRadius, whatIsPlayer);
+        isInAttackRange = Physics2D.OverlapCircle(transform.position, attackRadius, whatIsPlayer);
+
+        Debug.Log(isInChaseRange + " | " + isInAttackRange);
+
+
+        dir = target.position - transform.position;
+        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        dir.Normalize();
+        movement = dir;
+    }
+
+    private void FixedUpdate()
+    {
+        if (hp.currentHealth > 0)
         {
-            wayPoint = transform.position;
+            if (isInChaseRange && !isInAttackRange)
+            {
+                Debug.Log("test");
+                MoveCharacter(movement);
+            }
+            if (isInAttackRange)
+            {
+                Debug.Log("test222");
+                rb.velocity = Vector2.zero;
+            }
         }
         else
         {
-            isInAttackRange = Physics2D.OverlapCircle(transform.position, attackRadius, whatIsPlayer);
-            if (isInAttackRange)
-            {
-                //Debug.Log("test222");
-                rb.velocity = Vector2.zero;
-                Debug.Log("Enemy2 killed player" + transform.position + " | " + wayPoint);
-                GameOverScreen.SetActive(true);
-            }
-
-            unstickCounter++;
-
-            dir = wayPoint;
-            float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-            dir.Normalize();
-            movement = dir;
-          
-            Debug.Log(currentPos2D + wayPoint);
-            transform.position = Vector2.MoveTowards(currentPos2D, currentPos2D + wayPoint, speed * Time.deltaTime);
-            if (Vector2.Distance(transform.position, wayPoint) < range)
-            {
-                SetNewDestination();
-            }
-
-            if (unstickCounter > 300)
-            {
-                unstickCounter = 0;
-                SetNewDestination();
-            }
+            movement = transform.position;
         }
     }
 
-    void SetNewDestination()
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        wayPoint = new Vector2(Random.Range(-maxDistance, maxDistance), Random.Range(-maxDistance, maxDistance));
+        if (collision.tag == "Player")
+        {
+            isInRange = true;
+        }
+        if (isInRange)
+        {
+            Debug.Log("Enemy1 killed player");
+        }
+
     }
+
+    private void MoveCharacter(Vector2 dir)
+    {
+        rb.MovePosition((Vector2)transform.position + (dir * speed * Time.deltaTime));
+    }
+
 }
