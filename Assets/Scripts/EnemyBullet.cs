@@ -7,6 +7,7 @@ public class EnemyBullet : MonoBehaviour
     public Transform target;
     private Vector3 targetPosition;
     public float bulletSpeed = 1.5f;
+    [SerializeField] private float duration = 3f;
     private void Start()
     {
         target = GameObject.Find("Player").transform;
@@ -17,6 +18,10 @@ public class EnemyBullet : MonoBehaviour
         //transform.position = Vector2.MoveTowards(transform.position, targetPosition, bulletSpeed * Time.deltaTime);
         //transform.Translate(targetPosition * Time.deltaTime, Space.Self);
         transform.position += targetPosition * bulletSpeed * Time.deltaTime;
+        duration -= Time.deltaTime;
+        if (duration <= 0) {
+            Destroy(gameObject);
+        }
     }
     public GameObject hitEffect;
 

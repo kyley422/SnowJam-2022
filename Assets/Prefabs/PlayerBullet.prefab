@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6563030479097971343}
   - component: {fileID: 2999856951667101236}
   - component: {fileID: -376731450412906897}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PlayerBullet
   m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &2999856951667101236
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -147,3 +147,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitEffect: {fileID: 5761094383843285960, guid: 56ccc8c89a55090439edf0914efa2b54, type: 3}
+  duration: 0.4

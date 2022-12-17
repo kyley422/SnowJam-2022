@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         Move();
-        Look();
+        //Look();
     }
 
     void ProcessInputs()
@@ -38,6 +38,7 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
     }
 
+    /*
     void Look()
     {
         rb.MovePosition(rb.position + moveDirection * moveSpeed * Time.fixedDeltaTime);
@@ -46,6 +47,7 @@ public class PlayerMovement : MonoBehaviour
         float angle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg - 90f;
         rb.rotation = angle;
     }
+    */
 
     private void OnCollisionEnter2D(Collision2D other)
     {

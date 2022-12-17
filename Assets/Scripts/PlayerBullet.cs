@@ -6,6 +6,16 @@ public class PlayerBullet : MonoBehaviour
 {
     public GameObject hitEffect;
 
+    [SerializeField] private float duration = 3f;
+
+    private void Update()
+    {
+        duration -= Time.deltaTime;
+        if (duration <= 0) {
+            Destroy(gameObject);
+        }
+    }
+
     private void OnCollisionEnter2D(Collision2D other)
     {
         GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
