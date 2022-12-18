@@ -53,9 +53,9 @@ public class Enemy2 : MonoBehaviour
             isInAttackRange = Physics2D.OverlapCircle(transform.position, attackRadius, whatIsPlayer);
             if (isInAttackRange)
             {
-                Debug.Log("test222");
+                //Debug.Log("test222");
                 rb.velocity = Vector2.zero;
-                Debug.Log("Enemy2 killed player" + transform.position + " | " + wayPoint);
+                //Debug.Log("Enemy2 killed player" + transform.position + " | " + wayPoint);
             }
 
             unstickCounter++;
@@ -64,7 +64,7 @@ public class Enemy2 : MonoBehaviour
             dir.Normalize();
             movement = dir;
 
-            Debug.Log(currentPos2D + wayPoint);
+            //Debug.Log(currentPos2D + wayPoint);
             transform.position = Vector2.MoveTowards(currentPos2D, currentPos2D + wayPoint, speed * Time.deltaTime);
             if (Vector2.Distance(transform.position, wayPoint) < range)
             {

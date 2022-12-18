@@ -5,7 +5,7 @@
             <ui:Label text="Main Menu" display-tooltip-when-elided="true" enable-rich-text="true" name="MenuText" style="color: rgb(0, 0, 0); -unity-text-align: upper-center; justify-content: center; align-items: center; position: absolute; top: 20px; font-size: 20px;" />
             <ui:Button text="Start Game" display-tooltip-when-elided="true" name="StartButton" class="button-style" />
             <ui:Button text="Credits" display-tooltip-when-elided="true" name="CreditsButton" class="button-style" />
-            <ui:Label display-tooltip-when-elided="true" name="CreditsText" style="color: rgb(0, 0, 0); display: none; position: absolute; height: 294px; top: 20px; width: 217px; left: 16px; -unity-text-align: middle-left; background-color: rgb(65, 88, 113); border-top-left-radius: 18px; border-bottom-left-radius: 18px; border-top-right-radius: 18px; border-bottom-right-radius: 18px; font-size: 10px; right: auto; bottom: auto;">
+            <ui:Label display-tooltip-when-elided="true" name="CreditsText" style="color: rgb(0, 0, 0); display: none; position: absolute; height: 306px; top: 10px; width: 240px; left: 3px; -unity-text-align: middle-left; background-color: rgb(65, 88, 113); border-top-left-radius: 18px; border-bottom-left-radius: 18px; border-top-right-radius: 18px; border-bottom-right-radius: 18px; font-size: 10px; right: auto; bottom: auto; align-items: center; justify-content: center;">
                 <ui:Button text="Back" display-tooltip-when-elided="true" name="BackButton" class="back-button" />
             </ui:Label>
         </ui:VisualElement>

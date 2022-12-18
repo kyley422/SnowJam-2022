@@ -2,8 +2,8 @@
     height: 73px;
     width: 162px;
     font-size: 30px;
-    background-color: rgba(8, 135, 73, 255);
-    color: rgba(0, 0, 0, 255);
+    background-color: rgb(8, 135, 73);
+    color: rgb(0, 0, 0);
     justify-content: center;
     align-items: center;
     border-left-width: 0;
@@ -67,8 +67,8 @@
     border-bottom-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    background-color: rgba(0, 137, 37, 255);
-    color: rgba(0, 0, 0, 255);
+    background-color: rgb(0, 137, 37);
+    color: rgb(0, 0, 0);
 }
 
 .pause-button:hover {
@@ -107,4 +107,15 @@
     border-bottom-right-radius: 5px;
     background-color: rgb(4, 63, 20);
     color: rgb(255, 255, 255);
+}
+
+.health-icon {
+    height: 44px;
+    width: 50px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: rgba(171, 33, 33, 255);
+    position: absolute;
+    left: 10px;
+    top: 10px;
 }

@@ -5,6 +5,6 @@
             <ui:Button text="Resume" display-tooltip-when-elided="true" name="ResumeButton" class="resume-button" />
             <ui:Button text="Quit" display-tooltip-when-elided="true" name="QuiteButton" class="resume-button" />
         </ui:Label>
+        <ui:Button text="Pause" display-tooltip-when-elided="true" name="PauseButton" class="pause-button" style="height: 41px; width: 50px; font-size: 15px; display: flex;" />
     </ui:VisualElement>
-    <ui:Button text="Pause" display-tooltip-when-elided="true" name="PauseButton" class="pause-button" style="height: 41px; width: 50px; font-size: 15px;" />
 </ui:UXML>
