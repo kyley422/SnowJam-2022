@@ -8,6 +8,8 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb;
     public Camera cam;
 
+    public AudioSource footsteps; 
+
     public Animator anim;
     public float x, y;
     private bool isWalking;
@@ -31,6 +33,7 @@ public class PlayerMovement : MonoBehaviour
             if (!isWalking)
             {
                 isWalking = true;
+                footsteps.enabled = true;
                 anim.SetBool("IsMoving", isWalking);
             }
         } else
@@ -38,6 +41,7 @@ public class PlayerMovement : MonoBehaviour
             if (isWalking)
             {
                 isWalking = false;
+                footsteps.enabled = false; 
                 anim.SetBool("IsMoving", isWalking);
                 StopMoving();
             }
