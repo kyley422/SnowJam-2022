@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public Camera cam;
 
     private Vector2 moveDirection;
-    private Vector2 mousePos;
+    //private Vector2 mousePos;
 
     public PlayerHP hp;
 
@@ -30,7 +30,7 @@ public class PlayerMovement : MonoBehaviour
         float moveY = Input.GetAxisRaw("Vertical");
 
         moveDirection = new Vector2(moveX, moveY);
-        mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+        //mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
     }
 
     void Move()
