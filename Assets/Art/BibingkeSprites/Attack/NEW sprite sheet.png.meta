@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -631,7 +631,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      NEW sprite sheet_11: -812901556
+      NEW sprite sheet_23: -1706354293
       NEW sprite sheet_15: -1960440144
       NEW sprite sheet_22: -542346454
       NEW sprite sheet_8: -1706058883
@@ -653,7 +653,7 @@ TextureImporter:
       NEW sprite sheet_20: -675295613
       NEW sprite sheet_4: 1411137959
       NEW sprite sheet_16: 1473431465
-      NEW sprite sheet_23: -1706354293
+      NEW sprite sheet_11: -812901556
       NEW sprite sheet_14: -793832885
   spritePackingTag: 
   pSDRemoveMatte: 0
