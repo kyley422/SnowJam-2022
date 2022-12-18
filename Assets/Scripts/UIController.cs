@@ -11,7 +11,7 @@ public class UIController : MonoBehaviour
     public Button backButton;
     public Label creditsText;
    
-
+   public AudioSource sound; 
 
     // Start is called before the first frame update
     void Start()
@@ -31,25 +31,28 @@ public class UIController : MonoBehaviour
 
     void StartButtonPressed()
     {
+        sound.Play(); 
         SceneManager.LoadScene("game");
     }
 
     void CreditsButtonPresses()
     {
-        creditsText.text = "Joanna Liu - 2D Art, Writting \n\n\n" +
-                            "Catherine Sun - Programming, Audio \n\n\n" +
+        sound.Play(); 
+        creditsText.text = "Joanna Liu - 2D Art, Writtin \n\n\n" +
+                            "Catherine Sun -Programming, Audio \n\n\n" +
                             "Laura Ness - Level Design, Programming \n\n\n" +
-                            "Clea Hannahs - Programming, UI/UX, Animation \n\n\n" +
-                            "Kyle Machnicki -Programming, Writting, Animation \n\n\n" +
+                            "Clea Hannahs - Programming, UI / UX \n\n\n" +
+                            "Kyle Machnicki -Programming, Writting \n\n\n" +
                             "My-Thuan Ha-Hoang - Level Design, Writting \n\n\n" +
-                            "Kyle Yang - Programming, Animation \n\n\n" +
-                            "Julia Lee - UI/UX, 2D Art";
+                            "Kyle Yang - Programming \n\n\n" +
+                            "Julia Lee -UI / UX, 2D Art";
 
         creditsText.style.display = DisplayStyle.Flex;
     }
 
     void BackButtonPressed()
     {
+        sound.Play(); 
         creditsText.style.display = DisplayStyle.None;
     }
 }
