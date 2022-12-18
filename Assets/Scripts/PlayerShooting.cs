@@ -20,19 +20,21 @@ public class PlayerShooting : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             Shoot();
+            if (!isAttacking)
+            {
+                isAttacking = true;
+                anim.SetBool("IsAttacking", isAttacking);
+            }
+            else
+            {
+                if (isAttacking)
+                {
+                    isAttacking = false;
+                    anim.SetBool("IsAtacking", isAttacking);
+                }
+            }
         }
-        //if (!isAttacking)
-        //{
-        //    isAttacking = true;
-        //    anim.SetBool("IsAttacking", isAttacking);
-        //} else
-        //{
-        //    if (isAttacking)
-        //    {
-        //        isAttacking = false;
-        //        anim.SetBool("IsAtacking", isAttacking);
-        //    }
-        //}
+        
 
     }
 
