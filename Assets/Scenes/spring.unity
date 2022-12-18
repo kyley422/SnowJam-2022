@@ -39136,6 +39136,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2896617263758654346, guid: 602cc7615c0f54aa29449b6a9c874ade, type: 3}
   m_PrefabInstance: {fileID: 1855275420}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1855275422 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5603567425581742523, guid: 602cc7615c0f54aa29449b6a9c874ade, type: 3}
+  m_PrefabInstance: {fileID: 1855275420}
+  m_PrefabAsset: {fileID: 0}
+--- !u!19719996 &1855275423
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1855275422}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0.00001
 --- !u!1 &2045919580
 GameObject:
   m_ObjectHideFlags: 0
