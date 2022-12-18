@@ -528,10 +528,6 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 386090278}
-    - target: {fileID: 76442349787602979, guid: 8f48d4625e3560c45be88769717d0ab7, type: 3}
-      propertyPath: maxHealth
-      value: 10000000
-      objectReference: {fileID: 0}
     - target: {fileID: 76442349787602980, guid: 8f48d4625e3560c45be88769717d0ab7, type: 3}
       propertyPath: m_Name
       value: Player
