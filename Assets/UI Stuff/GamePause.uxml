@@ -1,16 +1,10 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI%20Stuff/resume-style.uss?fileID=7433441132597879392&amp;guid=412c5268b9e8f41a6961262004b000b8&amp;type=3#resume-style" />
     <ui:VisualElement name="Background" style="flex-grow: 1; align-items: center; justify-content: center;">
-        <ui:VisualElement name="HealthBar" style="position: absolute; left: 4px; top: 0; height: 58px; width: 196px; display: none;">
-            <ui:VisualElement name="HealthIcon1" class="health-icon" style="height: 34px; width: 36px; display: flex;" />
-            <ui:VisualElement name="HealthIcon2" class="health-icon" style="left: 60px; width: 36px; height: 34px;" />
-            <ui:VisualElement name="HealthIcon3" class="health-icon" style="left: 110px; width: 36px; height: 34px;" />
-            <ui:VisualElement name="HealthIcon4" class="health-icon" style="left: 160px; width: 36px; height: 34px;" />
-        </ui:VisualElement>
         <ui:Label display-tooltip-when-elided="true" name="PauseMenu" style="height: 654px; width: 428px; justify-content: center; align-items: center; display: none;">
             <ui:Button text="Resume" display-tooltip-when-elided="true" name="ResumeButton" class="resume-button" />
             <ui:Button text="Quit" display-tooltip-when-elided="true" name="QuiteButton" class="resume-button" />
         </ui:Label>
-        <ui:Button text="Pause" display-tooltip-when-elided="true" name="PauseButton" class="pause-button" style="height: 41px; width: 50px; font-size: 15px;" />
+        <ui:Button text="Pause" display-tooltip-when-elided="true" name="PauseButton" class="pause-button" style="height: 41px; width: 50px; font-size: 15px; display: flex;" />
     </ui:VisualElement>
 </ui:UXML>

@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
+    path: 
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/UI Test.unity
@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SwapTest1.unity
     guid: bc93bbee584ba40faa66eab24b9e0180
+  - enabled: 1
+    path: Assets/Scenes/EnemyTest.unity
+    guid: 1837c910aa8bf472f96ae7463610b654
   m_configObjects: {}

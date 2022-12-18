@@ -78,12 +78,12 @@ public class PlayerMovement : MonoBehaviour
         /* Collision detection for Enemy, Player must take damage. */
         if (other.gameObject.tag == "Enemy")
         {
-            hp.TakeDamage(25);
+            hp.TakeDamage(1);
         }
         /* Collision detection for Enemy bullets */
         if (other.gameObject.tag == "EnemyBullet")
         {
-            hp.TakeDamage(25);
+            hp.TakeDamage(1);
         }
     }
 }
