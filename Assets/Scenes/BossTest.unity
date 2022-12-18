@@ -220,7 +220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 241e6bd03fb094827953aa85d2efe407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraZoom: 3
+  cameraZoom: 6
   offset: {x: 0, y: 0}
 --- !u!1001 &1419791486
 PrefabInstance:
@@ -277,6 +277,10 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 1294402074}
+    - target: {fileID: 76442349787602979, guid: 8f48d4625e3560c45be88769717d0ab7, type: 3}
+      propertyPath: maxHealth
+      value: 10000
+      objectReference: {fileID: 0}
     - target: {fileID: 76442349787602980, guid: 8f48d4625e3560c45be88769717d0ab7, type: 3}
       propertyPath: m_Name
       value: Player
@@ -294,9 +298,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1876266248696548303, guid: c8209af0f9c83754bb9b6ae657ec9cfb, type: 3}
+      propertyPath: m_Mass
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2138829794830803238, guid: c8209af0f9c83754bb9b6ae657ec9cfb, type: 3}
       propertyPath: m_Name
       value: Evil Summer
+      objectReference: {fileID: 0}
+    - target: {fileID: 2138829794830803238, guid: c8209af0f9c83754bb9b6ae657ec9cfb, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3924266588386008932, guid: c8209af0f9c83754bb9b6ae657ec9cfb, type: 3}
+      propertyPath: maxHealth
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 8486875286175227808, guid: c8209af0f9c83754bb9b6ae657ec9cfb, type: 3}
       propertyPath: m_RootOrder

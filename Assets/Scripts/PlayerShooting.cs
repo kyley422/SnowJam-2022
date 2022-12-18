@@ -26,7 +26,6 @@ public class PlayerShooting : MonoBehaviour
 
     void Shoot()
     {
-        Debug.Log("Shot Projectile");
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
         Vector2 firePoint2D = new Vector2(firePoint.position.x, firePoint.position.y);
         Vector2 aimDirection = mousePos - firePoint2D;

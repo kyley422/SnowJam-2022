@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6025207241642133631}
   - component: {fileID: 8642789652024064930}
   - component: {fileID: 5830341294029667617}
-  - component: {fileID: 3924266588386008932}
+  - component: {fileID: 4395682846038698875}
   m_Layer: 6
   m_Name: Evil Summer
   m_TagString: Untagged
@@ -31,8 +31,8 @@ Transform:
   m_GameObject: {fileID: 2138829794830803238}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.49, y: 1.47, z: 0}
-  m_LocalScale: {x: 8, y: 8, z: 8}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: 8, y: 8, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -101,7 +101,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 5
   m_LinearDrag: 999
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -184,8 +184,8 @@ MonoBehaviour:
   radius: 10
   bulletSpeed: 1
   bulletPrefab: {fileID: 3429428723160052209, guid: 5484b3cf471466841868eb44e34aa242, type: 3}
-  hp: {fileID: 3924266588386008932}
---- !u!114 &3924266588386008932
+  hp: {fileID: 4395682846038698875}
+--- !u!114 &4395682846038698875
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -194,9 +194,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2138829794830803238}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45c33daffe3284605bad8b4795e103e4, type: 3}
+  m_Script: {fileID: 11500000, guid: 12eefcef60a751d4f8454882cacd4810, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 2000
   currentHealth: 0
   deathEffect: {fileID: 5939964352661260282, guid: be5a1b9e15891ee4bb5cba532ff35aa4, type: 3}
