@@ -298,6 +298,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1876266248696548303, guid: c8209af0f9c83754bb9b6ae657ec9cfb, type: 3}
+      propertyPath: m_Mass
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2138829794830803238, guid: c8209af0f9c83754bb9b6ae657ec9cfb, type: 3}
       propertyPath: m_Name
       value: Evil Summer
