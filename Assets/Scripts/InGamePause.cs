@@ -12,6 +12,8 @@ public class InGamePause : MonoBehaviour
     public Button pauseButton;
     public Label pauseMenu;
 
+    public AudioSource sound; 
+
     private void Start()
     {
         var root = GetComponent<UIDocument>().rootVisualElement;
@@ -29,11 +31,13 @@ public class InGamePause : MonoBehaviour
 
     public void QuitButtonPressed()
     {
+        sound.Play();
         SceneManager.LoadScene("UI Test");
     }
 
     public void PauseButtonPressed()
     {
+        sound.Play(); 
         pauseMenu.style.display = DisplayStyle.Flex;
         pauseButton.style.display = DisplayStyle.None;
         Time.timeScale = 0;
@@ -41,6 +45,7 @@ public class InGamePause : MonoBehaviour
 
     public void ResumeButtonPressed()
     {
+        sound.Play(); 
         pauseMenu.style.display = DisplayStyle.None;
         pauseButton.style.display = DisplayStyle.Flex;
         Time.timeScale = 1;
