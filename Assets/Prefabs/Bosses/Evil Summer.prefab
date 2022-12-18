@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 6025207241642133631}
   - component: {fileID: 8642789652024064930}
   - component: {fileID: 5830341294029667617}
-  m_Layer: 0
+  - component: {fileID: 3924266588386008932}
+  m_Layer: 6
   m_Name: Evil Summer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -167,3 +168,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1747affb3027eb946ab21090154b23aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 1
+  checkRadius: 99
+  attackRadius: 0
+  isInRange: 0
+  GameOverScreen: {fileID: 0}
+  shouldRotate: 0
+  whatIsPlayer:
+    serializedVersion: 2
+    m_Bits: 0
+  dir: {x: 0, y: 0, z: 0}
+  attackTimer: 2
+  burstTimer: 0.25
+  numberOfProjectiles: 12
+  radius: 10
+  bulletSpeed: 1
+  bulletPrefab: {fileID: 3429428723160052209, guid: 5484b3cf471466841868eb44e34aa242, type: 3}
+  hp: {fileID: 3924266588386008932}
+--- !u!114 &3924266588386008932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138829794830803238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45c33daffe3284605bad8b4795e103e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0
+  deathEffect: {fileID: 5939964352661260282, guid: be5a1b9e15891ee4bb5cba532ff35aa4, type: 3}
