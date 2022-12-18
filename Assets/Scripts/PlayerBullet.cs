@@ -11,7 +11,8 @@ public class PlayerBullet : MonoBehaviour
     private void Update()
     {
         duration -= Time.deltaTime;
-        if (duration <= 0) {
+        if (duration <= 0)
+        {
             Destroy(gameObject);
         }
     }
@@ -19,7 +20,7 @@ public class PlayerBullet : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other)
     {
         GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
-        Destroy(effect, 5f);
+        Destroy(effect, .3f);
         Destroy(gameObject);
 
         /* Check if other is an enemy, and if so, make it take damage. */

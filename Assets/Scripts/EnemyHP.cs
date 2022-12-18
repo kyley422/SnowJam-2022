@@ -8,7 +8,7 @@ public class EnemyHP : MonoBehaviour
 {
     public int maxHealth = 100;
     public int currentHealth;
-
+    public GameObject deathEffect;
     void Start()
     {
         currentHealth = maxHealth;
@@ -39,7 +39,10 @@ public class EnemyHP : MonoBehaviour
 
     IEnumerator DeathDelay()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(.1f);
+        gameObject.SetActive(false);
+        GameObject effect = Instantiate(deathEffect, transform.position, Quaternion.identity);
+        Destroy(effect, .3f);
         Destroy(gameObject);
     }
 }

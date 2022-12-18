@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed;
     public Rigidbody2D rb;
     public Camera cam;
+    public AudioSource footsteps;
 
     public Animator anim;
     public float x, y;
@@ -16,14 +17,13 @@ public class PlayerMovement : MonoBehaviour
     //private Vector2 mousePos;
 
     public PlayerHP hp;
-
     void Update()
     {
         ProcessInputs();
         x = Input.GetAxisRaw("Horizontal");
         y = Input.GetAxisRaw("Vertical");
 
-        if(x!= 0 || y!= 0)
+        if (x != 0 || y != 0)
         {
             anim.SetFloat("X", x);
             anim.SetFloat("Y", y);
@@ -31,13 +31,17 @@ public class PlayerMovement : MonoBehaviour
             if (!isWalking)
             {
                 isWalking = true;
+                footsteps.enabled = true;
+                footsteps.Play();
                 anim.SetBool("IsMoving", isWalking);
             }
-        } else
+        }
+        else
         {
             if (isWalking)
             {
                 isWalking = false;
+                footsteps.enabled = false;
                 anim.SetBool("IsMoving", isWalking);
                 StopMoving();
             }
@@ -47,14 +51,13 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         Move();
-        //Look();
     }
 
 
     private void StopMoving()
     {
         rb.velocity = Vector2.zero;
-    }    
+    }
 
     void ProcessInputs()
     {
@@ -62,8 +65,6 @@ public class PlayerMovement : MonoBehaviour
         float moveY = Input.GetAxisRaw("Vertical");
 
         moveDirection = new Vector2(moveX, moveY);
-
-        //mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
     }
 
     void Move()
@@ -71,16 +72,6 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
     }
 
-    /*
-    void Look()
-    {
-        rb.MovePosition(rb.position + moveDirection * moveSpeed * Time.fixedDeltaTime);
-
-        Vector2 lookDirection = mousePos - rb.position;
-        float angle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg - 90f;
-        rb.rotation = angle;
-    }
-    */
 
     private void OnCollisionEnter2D(Collision2D other)
     {
