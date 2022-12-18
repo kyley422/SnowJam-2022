@@ -49,7 +49,6 @@ public class PlayerHP : MonoBehaviour
             SceneManager.LoadScene("UI Test");
             MainMenu.SetActive(false);
             GameOver.SetActive(true);
-
         }
     }
 
