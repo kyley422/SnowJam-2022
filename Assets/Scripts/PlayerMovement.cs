@@ -8,6 +8,10 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb;
     public Camera cam;
 
+    public Animator anim;
+    public float x, y;
+    private bool isWalking;
+
     private Vector2 moveDirection;
     //private Vector2 mousePos;
 
@@ -16,6 +20,28 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         ProcessInputs();
+        x = Input.GetAxisRaw("Horizontal");
+        y = Input.GetAxisRaw("Vertical");
+
+        if(x!= 0 || y!= 0)
+        {
+            anim.SetFloat("X", x);
+            anim.SetFloat("Y", y);
+
+            if (!isWalking)
+            {
+                isWalking = true;
+                anim.SetBool("IsMoving", isWalking);
+            }
+        } else
+        {
+            if (isWalking)
+            {
+                isWalking = false;
+                anim.SetBool("IsMoving", isWalking);
+                StopMoving();
+            }
+        }
     }
 
     void FixedUpdate()
@@ -24,12 +50,19 @@ public class PlayerMovement : MonoBehaviour
         //Look();
     }
 
+
+    private void StopMoving()
+    {
+        rb.velocity = Vector2.zero;
+    }    
+
     void ProcessInputs()
     {
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
 
         moveDirection = new Vector2(moveX, moveY);
+
         //mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
     }
 
