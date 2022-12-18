@@ -10,13 +10,32 @@ public class PlayerShooting : MonoBehaviour
     public float bulletForce = 20f;
     public Camera cam;
     private Vector2 mousePos;
+    private bool isAttacking;
+    public Animator anim;
+
+
     // Update is called once per frame
     void Update()
     {
         if (Input.GetButtonDown("Fire1"))
         {
             Shoot();
+            if (!isAttacking)
+            {
+                isAttacking = true;
+                anim.SetBool("IsAttacking", isAttacking);
+            }
+            else
+            {
+                if (isAttacking)
+                {
+                    isAttacking = false;
+                    anim.SetBool("IsAtacking", isAttacking);
+                }
+            }
         }
+        
+
     }
 
     void Shoot()
