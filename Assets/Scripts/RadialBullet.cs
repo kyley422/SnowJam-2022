@@ -23,7 +23,7 @@ public class RadialBullet : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other)
     {
         GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
-        Destroy(effect, 5f);
+        Destroy(effect, .3f);
         Destroy(gameObject);
     }
 }
