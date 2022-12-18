@@ -7,7 +7,7 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 0
     path: 
-    guid: 2cda990e2423bbf4892e6590ba056729
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/UI Test.unity
     guid: 51417b98f12d1462480d195c220bca59
@@ -23,4 +23,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EnemyTest.unity
     guid: 1837c910aa8bf472f96ae7463610b654
+  - enabled: 1
+    path: Assets/Scenes/spring.unity
+    guid: b1d00d15099e947468347ec4219cb617
+  - enabled: 1
+    path: Assets/Scenes/Summer.unity
+    guid: 56aa9642df94f4f7b99d0ef3032e5171
+  - enabled: 1
+    path: Assets/Scenes/Autumn.unity
+    guid: 8ed5c0456a8de4408ac03ffbd767f5cc
+  - enabled: 1
+    path: Assets/Scenes/Winter.unity
+    guid: 8356f8efeaeba47a1b6be687bec6b9ab
   m_configObjects: {}
