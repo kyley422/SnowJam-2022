@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5a99f17cfe71a534a83aae84e6b4add0
+guid: 1f57a4bb8d998174d83df0b0c7143168
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,12 +117,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Icicle_0
+      name: Turret_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 34
+        width: 36
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -131,19 +131,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d958ded6d7d7fd47862a2b901fbb20c
-      internalID: -125662698
+      spriteID: eda7813920331814088034189c2d7296
+      internalID: -1444619603
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Icicle_1
+      name: Turret_1
       rect:
         serializedVersion: 2
-        x: 34
+        x: 37
         y: 0
-        width: 34
+        width: 36
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -152,19 +152,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ef9924bb9ec5254f9ec52ce093c52a1
-      internalID: 1497461062
+      spriteID: 487b3495e6e71094690c39fa6f13ef1e
+      internalID: 1437972034
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Icicle_2
+      name: Turret_2
       rect:
         serializedVersion: 2
-        x: 68
+        x: 74
         y: 0
-        width: 34
+        width: 36
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -173,29 +173,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b282b8df5a1afc4ab8a1e7d07f7a80a
-      internalID: -2059616426
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Icicle_3
-      rect:
-        serializedVersion: 2
-        x: 102
-        y: 0
-        width: 34
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 872ec4f9e6865204c86df22dca3b0937
-      internalID: -778475674
+      spriteID: 3813bd368c666ef4898826776f7a858f
+      internalID: -773538679
       vertices: []
       indices: 
       edges: []
@@ -211,10 +190,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Icicle_0: -125662698
-      Icicle_3: -778475674
-      Icicle_1: 1497461062
-      Icicle_2: -2059616426
+      Turret_0: -1444619603
+      Turret_2: -773538679
+      Turret_1: 1437972034
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
