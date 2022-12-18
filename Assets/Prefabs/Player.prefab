@@ -290,8 +290,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49dbd6f539f7b3b48ab5888499f1eed0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  MainMenu: {fileID: 0}
+  GameOver: {fileID: 0}
+  maxHealth: 4
   currentHealth: 0
+  hearts: []
+  fullHeart: {fileID: 21300000, guid: bbcc051b866b54ad4b86a56b615aa0a1, type: 3}
+  emptyHeart: {fileID: 21300000, guid: bff7e69d6c2044b0e82be732813735f0, type: 3}
 --- !u!95 &41744943
 Animator:
   serializedVersion: 4
