@@ -5,12 +5,12 @@
     border-right-color: rgba(20, 106, 94, 0);
     border-top-color: rgba(20, 106, 94, 0);
     border-bottom-color: rgba(20, 106, 94, 0);
-    background-color: rgb(68, 174, 164);
+    background-color: rgb(111, 154, 206);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    color: rgba(0, 0, 0, 255);
+    color: rgb(0, 0, 0);
 }
 
 .button-style:active {
@@ -20,12 +20,12 @@
     border-right-color: rgba(20, 106, 94, 0);
     border-top-color: rgba(20, 106, 94, 0);
     border-bottom-color: rgba(20, 106, 94, 0);
-    background-color: rgb(50, 128, 120);
+    background-color: rgb(95, 133, 161);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    color: rgba(255, 251, 251, 255);
+    color: rgb(255, 251, 251);
 }
 
 .button-style:hover {
@@ -35,7 +35,7 @@
     border-right-color: rgba(20, 106, 94, 0);
     border-top-color: rgba(20, 106, 94, 0);
     border-bottom-color: rgba(20, 106, 94, 0);
-    background-color: rgb(50, 128, 120);
+    background-color: rgb(61, 93, 118);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -62,7 +62,7 @@
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
     font-size: 12px;
-    background-color: rgba(60, 60, 60, 255);
+    background-color: rgb(60, 60, 60);
 }
 
 .back-button:active {
