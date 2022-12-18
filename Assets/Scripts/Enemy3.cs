@@ -19,12 +19,14 @@ public class Enemy3 : MonoBehaviour
     private float timer = 0f;
     // Initial orientation of the sprite renderer
     private Vector3 initScale;
+    private Animator anim;
     void Start()
     {
         leftEdge = new Vector3(transform.position.x - patrolRange, transform.position.y, 0);
         rightEdge = new Vector3(transform.position.x + patrolRange, transform.position.y, 0);
         rb = GetComponent<Rigidbody2D>();
         initScale = transform.localScale;
+        anim = gameObject.GetComponent<Animator>();
     }
     // Update is called once per frame
     void Update()
@@ -35,12 +37,14 @@ public class Enemy3 : MonoBehaviour
             if (transform.position.x < leftEdge[0])
                 movingLeft = false;
             Move(Direction.left);
+
         }
         else
         {
             if (transform.position.x > rightEdge[0])
                 movingLeft = true;
             Move(Direction.right);
+
         }
         timer += Time.deltaTime;
         if (timer > attackTimer)
@@ -65,11 +69,13 @@ public class Enemy3 : MonoBehaviour
                 break;
             case Direction.right:
                 // Otherwise, we flip the sprite
-                transform.localScale = new Vector3(Mathf.Abs(initScale.x) * -1, initScale.y, initScale.z);
+                transform.localScale = new Vector3(Mathf.Abs(initScale.x), initScale.y, initScale.z);
+
                 break;
         }
 
         // Have enemy move in the specified direction
+        anim.SetFloat("Horizontal", (int)dir);
         rb.velocity = new Vector2(moveSpeed * (int)dir, rb.velocity.y);
     }
 
