@@ -37,7 +37,7 @@ public class EnemyHP : MonoBehaviour
         }
     }
 
-    IEnumerator DeathDelay()
+    public virtual IEnumerator DeathDelay()
     {
         yield return new WaitForSeconds(.1f);
         gameObject.SetActive(false);

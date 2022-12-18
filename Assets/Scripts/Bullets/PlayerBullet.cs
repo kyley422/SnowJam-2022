@@ -26,6 +26,7 @@ public class PlayerBullet : MonoBehaviour
         /* Check if other is an enemy, and if so, make it take damage. */
         if (other.gameObject.tag == "Enemy")
         {
+            Debug.Log("hit enemy");
             other.gameObject.GetComponent<EnemyHP>().TakeDamage(100);
         }
     }
