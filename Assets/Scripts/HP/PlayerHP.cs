@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHP : MonoBehaviour
 {
-    public GameObject MainMenu, GameOver;
+    //public GameObject MainMenu, GameOver;
 
     public int maxHealth = 4;
     public int currentHealth;
@@ -47,8 +47,8 @@ public class PlayerHP : MonoBehaviour
             Debug.Log("Player died");
             Destroy(gameObject);
             SceneManager.LoadScene("UI Test");
-            MainMenu.SetActive(false);
-            GameOver.SetActive(true);
+            //MainMenu.SetActive(false);
+            //GameOver.SetActive(true);
         }
     }
 
