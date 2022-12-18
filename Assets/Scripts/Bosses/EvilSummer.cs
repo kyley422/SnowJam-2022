@@ -85,7 +85,6 @@ public class EvilSummer : MonoBehaviour
         else
         {
             movement = transform.position;
-            SceneManager.LoadScene("UI Test");
         }
     }
 
