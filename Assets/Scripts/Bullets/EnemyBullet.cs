@@ -10,8 +10,10 @@ public class EnemyBullet : MonoBehaviour
     [SerializeField] private float duration = 3f;
     private void Start()
     {
-        target = GameObject.Find("Player").transform;
-        targetPosition = (target.position - transform.position).normalized;
+        if (GameObject.Find("Player") != null) {
+            target = GameObject.Find("Player").transform;
+            targetPosition = (target.position - transform.position).normalized;
+        }
     }
     private void Update()
     {

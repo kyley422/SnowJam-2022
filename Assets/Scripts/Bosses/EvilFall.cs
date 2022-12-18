@@ -46,46 +46,49 @@ public class EvilFall : MonoBehaviour
 
     private void Update()
     {
+        if (GameObject.Find("Player") != null) {
+            isInChaseRange = Physics2D.OverlapCircle(transform.position, checkRadius, whatIsPlayer);
+            isInAttackRange = Physics2D.OverlapCircle(transform.position, attackRadius, whatIsPlayer);
 
-        isInChaseRange = Physics2D.OverlapCircle(transform.position, checkRadius, whatIsPlayer);
-        isInAttackRange = Physics2D.OverlapCircle(transform.position, attackRadius, whatIsPlayer);
-
-        //Debug.Log(isInChaseRange + " | " + isInAttackRange);
+            //Debug.Log(isInChaseRange + " | " + isInAttackRange);
 
 
-        dir = target.position - transform.position;
-        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-        dir.Normalize();
-        movement = dir;
+            dir = target.position - transform.position;
+            float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+            dir.Normalize();
+            movement = dir;
 
-        timer += Time.deltaTime;
-        if (timer > attackTimer)
-        {
-            Burst();
-            /* Reset timer */
-            timer = timer - attackTimer;
+            timer += Time.deltaTime;
+            if (timer > attackTimer)
+            {
+                Burst();
+                /* Reset timer */
+                timer = timer - attackTimer;
+            }
         }
     }
 
     private void FixedUpdate()
     {
-        if (hp.currentHealth > 0)
-        {
-            if (isInChaseRange && !isInAttackRange)
+        if (GameObject.Find("Player") != null) {
+            if (hp.currentHealth > 0)
             {
-                //Debug.Log("test");
-                MoveCharacter(movement);
+                if (isInChaseRange && !isInAttackRange)
+                {
+                    //Debug.Log("test");
+                    MoveCharacter(movement);
+                }
+                if (isInAttackRange)
+                {
+                    //Debug.Log("test222");
+                    rb.velocity = Vector2.zero;
+                }
             }
-            if (isInAttackRange)
+            else
             {
-                //Debug.Log("test222");
-                rb.velocity = Vector2.zero;
+                movement = transform.position;
+                SceneManager.LoadScene("UI Test");
             }
-        }
-        else
-        {
-            movement = transform.position;
-            SceneManager.LoadScene("UI Test");
         }
     }
 
