@@ -87,7 +87,6 @@ public class EvilFall : MonoBehaviour
             else
             {
                 movement = transform.position;
-                SceneManager.LoadScene("UI Test");
             }
         }
     }

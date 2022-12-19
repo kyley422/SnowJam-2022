@@ -13,7 +13,7 @@ public class SpringHP : EnemyHP
         gameObject.SetActive(false);
         GameObject effect = Instantiate(deathEffect, transform.position, Quaternion.identity);
         Destroy(effect, .3f);
-        SceneManager.LoadScene("Summer");
+        //SceneManager.LoadScene("Summer");
         Destroy(gameObject);
     }
 }
