@@ -22,7 +22,6 @@ public class Enemy3 : MonoBehaviour
     private Animator anim;
 
     public float bulletSize = 1f;
-    public float customDuration = 3f;
 
     void Start()
     {
@@ -97,7 +96,5 @@ public class Enemy3 : MonoBehaviour
         GameObject enemy3_bullet = Instantiate(bulletPrefab, transform.position, radialPosition);
         // Scaling
         enemy3_bullet.GetComponent<Transform>().localScale = new Vector3(enemy3_bullet.GetComponent<Transform>().localScale.x * bulletSize, enemy3_bullet.GetComponent<Transform>().localScale.y * bulletSize, enemy3_bullet.GetComponent<Transform>().localScale.z);
-        // Range
-        enemy3_bullet.GetComponent<EnemyBullet>().duration = customDuration;
     }
 }
