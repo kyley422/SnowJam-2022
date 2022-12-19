@@ -16391,7 +16391,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 241e6bd03fb094827953aa85d2efe407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraZoom: 6
+  cameraZoom: 10
   offset: {x: 0, y: 0}
 --- !u!81 &452431479
 AudioListener:
@@ -48634,15 +48634,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 76442349787602977, guid: 8f48d4625e3560c45be88769717d0ab7, type: 3}
       propertyPath: m_LocalScale.x
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 76442349787602977, guid: 8f48d4625e3560c45be88769717d0ab7, type: 3}
       propertyPath: m_LocalScale.y
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 76442349787602977, guid: 8f48d4625e3560c45be88769717d0ab7, type: 3}
       propertyPath: m_LocalScale.z
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 76442349787602977, guid: 8f48d4625e3560c45be88769717d0ab7, type: 3}
       propertyPath: m_LocalPosition.x

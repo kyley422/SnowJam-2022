@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: -4148628293552080213}
   - component: {fileID: -3195818813146761157}
   - component: {fileID: 3717900815989119053}
-  - component: {fileID: 2887678290940680704}
   - component: {fileID: 7999475160485538204}
+  - component: {fileID: 6012822226124341879}
   m_Layer: 6
   m_Name: Evil Fall
   m_TagString: Untagged
@@ -156,21 +156,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &2887678290940680704
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3333967088272435609}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45c33daffe3284605bad8b4795e103e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 100
-  currentHealth: 0
-  deathEffect: {fileID: 5939964352661260282, guid: be5a1b9e15891ee4bb5cba532ff35aa4, type: 3}
 --- !u!114 &7999475160485538204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -199,4 +184,19 @@ MonoBehaviour:
   radius: 10
   bulletSpeed: 1
   bulletPrefab: {fileID: 3429428723160052209, guid: 5484b3cf471466841868eb44e34aa242, type: 3}
-  hp: {fileID: 2887678290940680704}
+  hp: {fileID: 6012822226124341879}
+--- !u!114 &6012822226124341879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3333967088272435609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4176a32bea2475649a9d3f49b3efb622, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 2000
+  currentHealth: 0
+  deathEffect: {fileID: 5939964352661260282, guid: be5a1b9e15891ee4bb5cba532ff35aa4, type: 3}

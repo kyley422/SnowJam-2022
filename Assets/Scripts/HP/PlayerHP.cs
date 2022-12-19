@@ -45,8 +45,8 @@ public class PlayerHP : MonoBehaviour
         void Die()
         {
             Debug.Log("Player died");
-            Destroy(gameObject);
             SceneManager.LoadScene("UI Test");
+            Destroy(gameObject);
             //MainMenu.SetActive(false);
             //GameOver.SetActive(true);
         }
