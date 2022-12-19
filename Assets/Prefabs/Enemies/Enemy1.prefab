@@ -171,7 +171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  checkRadius: 4
+  checkRadius: 10
   attackRadius: 0
   isInRange: 0
   GameOverScreen: {fileID: 0}
