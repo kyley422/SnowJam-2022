@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8794984013191095017}
   - component: {fileID: 1382690845584059636}
   - component: {fileID: 7867456257779551232}
-  - component: {fileID: 3038763099638947827}
+  - component: {fileID: 6287059781177604754}
   m_Layer: 6
   m_Name: Evil Winter
   m_TagString: Untagged
@@ -184,8 +184,8 @@ MonoBehaviour:
   radius: 10
   bulletSpeed: 1
   bulletPrefab: {fileID: 3429428723160052209, guid: 5484b3cf471466841868eb44e34aa242, type: 3}
-  hp: {fileID: 3038763099638947827}
---- !u!114 &3038763099638947827
+  hp: {fileID: 6287059781177604754}
+--- !u!114 &6287059781177604754
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -194,9 +194,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2236045439265357348}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45c33daffe3284605bad8b4795e103e4, type: 3}
+  m_Script: {fileID: 11500000, guid: 13c45f1f0fcf89745b02c8e65063da2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 0
-  deathEffect: {fileID: 5939964352661260282, guid: be5a1b9e15891ee4bb5cba532ff35aa4, type: 3}
+  deathEffect: {fileID: 5939964352661260282, guid: afde0baf2e7c62647b5659b84d1af0ef, type: 3}
