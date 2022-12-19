@@ -32,7 +32,7 @@ public class UIController : MonoBehaviour
     void StartButtonPressed()
     {
         sound.Play(); 
-        SceneManager.LoadScene("spring 2");
+        SceneManager.LoadScene("spring");
     }
 
     void CreditsButtonPresses()
