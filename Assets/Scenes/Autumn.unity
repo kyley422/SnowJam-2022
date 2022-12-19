@@ -47067,6 +47067,26 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 1200265839}
+    - target: {fileID: 76442349787602979, guid: 8f48d4625e3560c45be88769717d0ab7, type: 3}
+      propertyPath: hearts.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 76442349787602979, guid: 8f48d4625e3560c45be88769717d0ab7, type: 3}
+      propertyPath: hearts.Array.data[0]
+      value: 
+      objectReference: {fileID: 1088233786}
+    - target: {fileID: 76442349787602979, guid: 8f48d4625e3560c45be88769717d0ab7, type: 3}
+      propertyPath: hearts.Array.data[1]
+      value: 
+      objectReference: {fileID: 302869850}
+    - target: {fileID: 76442349787602979, guid: 8f48d4625e3560c45be88769717d0ab7, type: 3}
+      propertyPath: hearts.Array.data[2]
+      value: 
+      objectReference: {fileID: 415679169}
+    - target: {fileID: 76442349787602979, guid: 8f48d4625e3560c45be88769717d0ab7, type: 3}
+      propertyPath: hearts.Array.data[3]
+      value: 
+      objectReference: {fileID: 161125921}
     - target: {fileID: 76442349787602980, guid: 8f48d4625e3560c45be88769717d0ab7, type: 3}
       propertyPath: m_Name
       value: Player
