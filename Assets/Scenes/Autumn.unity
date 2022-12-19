@@ -46753,11 +46753,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 76442349787602977, guid: 8f48d4625e3560c45be88769717d0ab7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -52.6
+      value: -54.9
       objectReference: {fileID: 0}
     - target: {fileID: 76442349787602977, guid: 8f48d4625e3560c45be88769717d0ab7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -10.5
+      value: 30.6
       objectReference: {fileID: 0}
     - target: {fileID: 76442349787602977, guid: 8f48d4625e3560c45be88769717d0ab7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -46798,7 +46798,7 @@ PrefabInstance:
     - target: {fileID: 76442349787602978, guid: 8f48d4625e3560c45be88769717d0ab7, type: 3}
       propertyPath: cam
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1200265839}
     - target: {fileID: 76442349787602980, guid: 8f48d4625e3560c45be88769717d0ab7, type: 3}
       propertyPath: m_Name
       value: Player
@@ -46806,7 +46806,7 @@ PrefabInstance:
     - target: {fileID: 76442349787602981, guid: 8f48d4625e3560c45be88769717d0ab7, type: 3}
       propertyPath: cam
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1200265839}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f48d4625e3560c45be88769717d0ab7, type: 3}
 --- !u!1001 &1146852390
@@ -47269,6 +47269,10 @@ PrefabInstance:
     - target: {fileID: 3333967088272435609, guid: e0130e2725a16402686381614bb4ba53, type: 3}
       propertyPath: m_Name
       value: Evil Fall
+      objectReference: {fileID: 0}
+    - target: {fileID: 3333967088272435609, guid: e0130e2725a16402686381614bb4ba53, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4223700586002676693, guid: e0130e2725a16402686381614bb4ba53, type: 3}
       propertyPath: m_RootOrder
