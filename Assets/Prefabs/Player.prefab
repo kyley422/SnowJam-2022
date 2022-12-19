@@ -270,7 +270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: deb30b117a04049cb87bb26858fb98a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 8
   rb: {fileID: 76442349787602983}
   cam: {fileID: 0}
   footsteps: {fileID: 486246804}
@@ -292,6 +292,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 4
   currentHealth: 0
+  hearts: []
   fullHeart: {fileID: 21300000, guid: bbcc051b866b54ad4b86a56b615aa0a1, type: 3}
   emptyHeart: {fileID: 21300000, guid: bff7e69d6c2044b0e82be732813735f0, type: 3}
 --- !u!95 &41744943
