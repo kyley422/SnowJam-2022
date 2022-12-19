@@ -20,6 +20,9 @@ public class Enemy3 : MonoBehaviour
     // Initial orientation of the sprite renderer
     private Vector3 initScale;
     private Animator anim;
+
+    public float bulletSize = 1f;
+
     void Start()
     {
         leftEdge = new Vector3(transform.position.x - patrolRange, transform.position.y, 0);
@@ -91,5 +94,7 @@ public class Enemy3 : MonoBehaviour
         // rb.AddForce(playerPosition * bulletForce, ForceMode2D.Impulse);
 
         GameObject enemy3_bullet = Instantiate(bulletPrefab, transform.position, radialPosition);
+        // Scaling
+        enemy3_bullet.GetComponent<Transform>().localScale = new Vector3(enemy3_bullet.GetComponent<Transform>().localScale.x * bulletSize, enemy3_bullet.GetComponent<Transform>().localScale.y * bulletSize, enemy3_bullet.GetComponent<Transform>().localScale.z);
     }
 }

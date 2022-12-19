@@ -10,6 +10,7 @@ public class Enemy4 : MonoBehaviour
     public float numberOfProjectiles = 12f;
     public float radius = 10f;
     public float bulletSpeed = 1f;
+    public float bulletSize = 1f;
     public GameObject bulletPrefab;
     private float timer = 0f;
     // Update is called once per frame
@@ -49,6 +50,8 @@ public class Enemy4 : MonoBehaviour
 
                 var proj = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
                 proj.GetComponent<Rigidbody2D>().velocity = new Vector2(bulletMoveDirection.x, bulletMoveDirection.y);
+                // Scaling
+                proj.GetComponent<Transform>().localScale = new Vector3(proj.GetComponent<Transform>().localScale.x * bulletSize, proj.GetComponent<Transform>().localScale.y * bulletSize, proj.GetComponent<Transform>().localScale.z);
 
                 angle += angleStep;
             }
