@@ -11,22 +11,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/UI Test.unity
     guid: 51417b98f12d1462480d195c220bca59
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/game.unity
     guid: aa9da1deca2394e8483f2f70d6c444b7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SwapTest0.unity
     guid: 287235e4edb374259b8154a2aea7b206
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SwapTest1.unity
     guid: bc93bbee584ba40faa66eab24b9e0180
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/EnemyTest.unity
     guid: 1837c910aa8bf472f96ae7463610b654
   - enabled: 1
     path: Assets/Scenes/spring.unity
     guid: b1d00d15099e947468347ec4219cb617
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/spring 2.unity
     guid: ad39d521cf4f6457aa7e699da9052486
   - enabled: 1
@@ -38,4 +38,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Winter.unity
     guid: 8356f8efeaeba47a1b6be687bec6b9ab
+  - enabled: 1
+    path: Assets/Scenes/VictoryScreen.unity
+    guid: 2ddc284f46e494282933cbe3b3a1a2a3
   m_configObjects: {}
