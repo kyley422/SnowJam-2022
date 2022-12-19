@@ -7,7 +7,7 @@ public class EnemyBullet : MonoBehaviour
     public Transform target;
     private Vector3 targetPosition;
     public float bulletSpeed = 1.5f;
-    [SerializeField] private float duration = 3f;
+    [SerializeField] public float duration = 3f;
     private void Start()
     {
         if (GameObject.Find("Player") != null) {
