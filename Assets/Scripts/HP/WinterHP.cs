@@ -13,7 +13,7 @@ public class WinterHP : EnemyHP
         gameObject.SetActive(false);
         GameObject effect = Instantiate(deathEffect, transform.position, Quaternion.identity);
         Destroy(effect, .3f);
-        SceneManager.LoadScene("VictoryScreen");
+        SceneManager.LoadScene("UI Test");
         Destroy(gameObject);
     }
 }
