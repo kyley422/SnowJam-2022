@@ -165,7 +165,6 @@ Transform:
   m_Children:
   - {fileID: 76442350117487968}
   - {fileID: 486246805}
-  - {fileID: 6827387230033770949}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -257,7 +256,7 @@ MonoBehaviour:
   firePoint: {fileID: 76442350117487968}
   bulletPrefab: {fileID: 3429428723160052209, guid: ffe9f5c96913e244782afc46e0aeb1cd, type: 3}
   bulletForce: 20
-  cam: {fileID: 8725311061453104676}
+  cam: {fileID: 0}
   anim: {fileID: 41744943}
 --- !u!114 &76442349787602981
 MonoBehaviour:
@@ -273,7 +272,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   rb: {fileID: 76442349787602983}
-  cam: {fileID: 8725311061453104676}
+  cam: {fileID: 0}
   footsteps: {fileID: 486246804}
   anim: {fileID: 41744943}
   x: 0
@@ -291,11 +290,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49dbd6f539f7b3b48ab5888499f1eed0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainMenu: {fileID: 0}
-  GameOver: {fileID: 0}
   maxHealth: 4
   currentHealth: 0
-  hearts: []
   fullHeart: {fileID: 21300000, guid: bbcc051b866b54ad4b86a56b615aa0a1, type: 3}
   emptyHeart: {fileID: 21300000, guid: bff7e69d6c2044b0e82be732813735f0, type: 3}
 --- !u!95 &41744943
@@ -375,102 +371,3 @@ Transform:
   m_Father: {fileID: 76442349787602977}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &6414212434103216256
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6827387230033770949}
-  - component: {fileID: 8725311061453104676}
-  - component: {fileID: 2605778687394655736}
-  - component: {fileID: 5506637907512512111}
-  m_Layer: 0
-  m_Name: Main Camera
-  m_TagString: MainCamera
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6827387230033770949
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6414212434103216256}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
-  m_LocalScale: {x: 0.32, y: 0.32, z: 0.32}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 76442349787602977}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!20 &8725311061453104676
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6414212434103216256}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 1
-  orthographic size: 5
-  m_Depth: -1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!81 &2605778687394655736
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6414212434103216256}
-  m_Enabled: 1
---- !u!114 &5506637907512512111
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6414212434103216256}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 241e6bd03fb094827953aa85d2efe407, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cameraZoom: 6
-  offset: {x: 0, y: 0}

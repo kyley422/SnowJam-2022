@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 5817106239200152043}
   - component: {fileID: 5091032476916111511}
   - component: {fileID: -76049252657887697}
-  - component: {fileID: -8814792275165488378}
   - component: {fileID: 4282031532913932502}
+  - component: {fileID: 5632706697319449878}
   - component: {fileID: 4385276902785790326}
   m_Layer: 6
   m_Name: Evil Spring
@@ -136,21 +136,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &-8814792275165488378
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4554791985114175785}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45c33daffe3284605bad8b4795e103e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 100
-  currentHealth: 0
-  deathEffect: {fileID: 5939964352661260282, guid: be5a1b9e15891ee4bb5cba532ff35aa4, type: 3}
 --- !u!114 &4282031532913932502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,7 +164,22 @@ MonoBehaviour:
   radius: 10
   bulletSpeed: 1
   bulletPrefab: {fileID: 3429428723160052209, guid: 5484b3cf471466841868eb44e34aa242, type: 3}
-  hp: {fileID: -8814792275165488378}
+  hp: {fileID: 5632706697319449878}
+--- !u!114 &5632706697319449878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4554791985114175785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ab7643d918d5e94191fdb0b0cc23379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 1000
+  currentHealth: 0
+  deathEffect: {fileID: 5939964352661260282, guid: be5a1b9e15891ee4bb5cba532ff35aa4, type: 3}
 --- !u!95 &4385276902785790326
 Animator:
   serializedVersion: 4

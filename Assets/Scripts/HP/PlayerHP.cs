@@ -11,7 +11,7 @@ public class PlayerHP : MonoBehaviour
     public int maxHealth = 4;
     public int currentHealth;
 
-    //public Image[] hearts;
+    public Image[] hearts;
     public Sprite fullHeart;
     public Sprite emptyHeart;
 
@@ -22,14 +22,14 @@ public class PlayerHP : MonoBehaviour
 
     private void Update()
     {
-        // foreach (Image img in hearts)
-        // {
-        //     img.sprite = emptyHeart;
-        // }
-        // for (int i = 0; i < currentHealth; i++)
-        // {
-        //     hearts[i].sprite = fullHeart;
-        // }
+        foreach (Image img in hearts)
+        {
+            img.sprite = emptyHeart;
+        }
+        for (int i = 0; i < currentHealth; i++)
+        {
+            hearts[i].sprite = fullHeart;
+        }
     }
 
     public void TakeDamage(int damage)

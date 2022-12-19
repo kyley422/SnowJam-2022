@@ -32,7 +32,7 @@ public class UIController : MonoBehaviour
     void StartButtonPressed()
     {
         sound.Play(); 
-        SceneManager.LoadScene("spring 2");
+        SceneManager.LoadScene("spring");
     }
 
     void CreditsButtonPresses()
@@ -40,8 +40,8 @@ public class UIController : MonoBehaviour
         sound.Play(); 
         creditsText.text = "Joanna Liu - 2D Art, Writting \n\n\n" +
                             "Laura Ness - Level Design, Programming, Audio \n\n\n" +
-                            "Clea Hannahs - Programming, UI/UX \n\n\n" +
-                            "Kyle Machnicki - Programming, Writting \n\n\n" +
+                            "Clea Hannahs - Programming, UI/UX, Animation \n\n\n" +
+                            "Kyle Machnicki - Programming, Writting, Animation \n\n\n" +
                             "My-Thuan Ha-Hoang - Level Design, Writting \n\n\n" +
                             "Kyle Yang - Programming \n\n\n" +
                             "Julia Lee - UI/UX, 2D Art";
